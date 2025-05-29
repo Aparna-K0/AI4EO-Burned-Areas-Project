@@ -1,0 +1,1 @@
+# AI4EO-Burned-Areas-Project
