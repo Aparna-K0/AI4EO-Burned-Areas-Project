@@ -20,7 +20,7 @@ This is a student-level project designed to analyse a wildfire-affected area usi
 ## Video Guide
 
 I've made a video that runs through and explains this project, specifically the notebook: https://youtu.be/jWUL9ZuWu_E 
-Some minor edits have been made since the video was recorded. 
+Some minor edits have been made since the video was recorded so please also check the notebook. 
 
 
 ## Problem Description 
