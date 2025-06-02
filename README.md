@@ -4,14 +4,14 @@ This is a student-level project designed to analyse a wildfire-affected area usi
 
 ## Table of Contents
 
-- [Video Guide](#video)
-- [Problem Description](#problem)
-- [Project Goals](#goals)
-- [Sentinel-2 and CNN Models](#figures)
-- [Environmental Assessment](#environmental)
-- [Getting Started](#gettingstarted)
-  - [Set Up](#setup)
-  - [Data and Requirements](#data)
+- [Video Guide](#video-guide)
+- [Problem Description](#problem-description)
+- [Project Goals](#project-goals)
+- [Sentinel-2 and CNN Models](#sentinel-2-and-cnn-models)
+- [Environmental Assessment](#environmental-assessment)
+- [Getting Started](#getting-started)
+  - [Set Up](#set-up)
+  - [Data and Requirements](#data-and-requirements)
 - [Acknowledgments](#acknowledgments)
 - [References](#references)
 - [Contact](#contact)
@@ -22,6 +22,7 @@ This is a student-level project designed to analyse a wildfire-affected area usi
 I've made a video that runs through and explains this project, specifically the notebook: https://youtu.be/jWUL9ZuWu_E 
 Some minor edits have been made since the video was recorded. 
 
+
 ## Problem Description 
 
 As global temperatures rise, hot dry conditions are becoming more frequent, which in turn increases the frequency of wildfires, which pose a significant threat to ecosystems, infrastructure, and human life (World Health Organization, 2023). The ability to rapidly identify burned areas immediately after a wildfire event would improve the efficiency of disaster response and aid distribution. 
@@ -29,6 +30,7 @@ As global temperatures rise, hot dry conditions are becoming more frequent, whic
 More ‘hands on’ and traditional methods for detecting fire damage, such as field surveys or manually interpreting satellite images require significant manpower and are incredibly time consuming. These are also often not practical for large areas or situations that require frequent monitoring due to the scale of the required response (Chuvieco et al., 2019). They also require significant amounts of pre-planning and on-ground support which diverts resources from other vital crisis areas. 
 
 Satellites like Sentinel-2 provide increased, public access to earth observation data, creating opportunities to automate burned/damaged area detection using spectral and spatial features. Sentinel-2’s MSI (Multi Spectral Instrument) provides multispectral imagery across the visible, near-infrared (NIR), and shortwave infrared (SWIR) wavelength ranges, which are particularly useful for analysing vegetation changes and impacts of fire (European Space Agency eoPortal, 2024).
+
 
 ## Project Goals
 
@@ -44,10 +46,12 @@ Satellites like Sentinel-2 provide increased, public access to earth observation
   
 -	Ultimately, produce an automated method for detecting burned areas using only post-fire Sentinel-2 data.
 
+
 ## Sentinel-2 and CNN Models
 
 ![convolutional neural network (CNN)](https://github.com/user-attachments/assets/d03b3248-b470-466d-998e-128c3b172be8)
 Sentinel-2 is part of ESA's Copernicus Constellation, aiming to provide high-resolution optical imagery for land monitoring. The mission focuses on vegetation, soil and water cover but has historically been used for a variety of monitoring purposes. The satellites operate at an altitude of just above 700km for optimal lighting.  
+
 The Multi-Spectral Instrument (MSI) is a push-broom sensor that captures imagery in 13 spectral bands, including the visible, near-infrared (NIR), and short-wave infrared (SWIR) regions of the electromagnetic spectrum. This project selectively uses the Green (B03), Red(B04), NIR (B08) and SWIR (B11) bands. Bands have a variety of resolutions: 10m, 20m and 60 making them useful for a variety of research projects (European Space Agency eoPortal, 2024). 
 
 ![Copy of convolutional neural network (CNN)](https://github.com/user-attachments/assets/0ce4ed1f-85f7-42f2-bd2d-6be8f5b13c01)
@@ -71,6 +75,7 @@ CO2 emissions for a project are based on a few factors such as hardware type, pr
 
 Water usage is another significant environmental cost. Google's data centres rely on evaporative cooling systems that consume 2-4 litres of water per kWh of energy used (Nicoletti et al., 2025). For this project's estimated energy use, 0.4-0.6 litres of water were used. This is negligible at a small scale but could be devastating when scaled up, potentially leading to water stress. 
 
+
 ## Getting Started 
 
 1) Download ml_cnn_burned__area_usa_fires_2025 and save in Google Drive
@@ -93,6 +98,7 @@ scikit-image
 scikit-learn
 tensorflow
 ```
+
 When using Google Colab mount Google Drive using
 ```
 from google.colab import drive
@@ -101,13 +107,20 @@ drive.mount('/content/drive')
 #### Data and Requirements
 
 Data for this project came from the Copernicus Browswer: https://browser.dataspace.copernicus.eu 
-Due to the size of the files they haven't been included in this repo but they are available from the browser using a free account. 
-Using the 'Search' tab within the browser access the following files 
+Due to the size of the files they haven't been included in this repo but they are available from the browser using a free account.
+
+Using the 'Search' tab within the browser access the following files:
+
 Los Angeles pre-fire:
+
 S2A_MSIL2A_20250102T183751_N0511_R027_T11SMT_20250102T221646.SAFE 
+
 Los Angeles post-fire:
+
 S2C_MSIL2A_20250201T183631_N0511_R027_T11SMT_20250201T210315.SAFE
+
 Dragoon Mountains post-fire:
+
 S2B_MSIL2A_20250508T175909_N0511_R041_T12SWA_20250508T215203.SAFE
 
 I also reorganised each of these files so that the bands were no longer in folders based on resolution and instead all in the IMG_DATA folder. 
@@ -121,15 +134,27 @@ McKee, F. (2024). GitHub - captainbluebear/GEOL0069-ML-Inland-Water-Body-Detecti
 
 ## References
 Anne-Laure Ligozat. (2024, November 13). Generative AI: energy consumption soars. Retrieved from https://www.polytechnique-insights.com/en/columns/energy/generative-ai-energy-consumption-soars/
-Chuvieco, E., Mouillot, F., van der Werf, G. R., San Miguel, J., Tanase, M., Koutsias, N., et al. (2019). Historical background and current developments for mapping burned area from satellite Earth observation. Remote Sensing of Environment, 225, 45–64. https://doi.org/10.1016/j.rse.2019.02.013European Space Agency eoPortal. (2024). Copernicus: Sentinel-2. Retrieved May 29, 2025, from https://www.eoportal.org/satellite-missions/copernicus-sentinel-2#overview
+
+Chuvieco, E., Mouillot, F., van der Werf, G. R., San Miguel, J., Tanase, M., Koutsias, N., et al. (2019). Historical background and current developments for mapping burned area from satellite Earth observation. Remote Sensing of Environment, 225, 45–64. https://doi.org/10.1016/j.rse.2019.02.013
+
+European Space Agency eoPortal. (2024). Copernicus: Sentinel-2. Retrieved May 29, 2025, from https://www.eoportal.org/satellite-missions/copernicus-sentinel-2#overview
+
 Freie Universität Berlin. (n.d.). Sentinel 2. Retrieved from https://blogs.fu-berlin.de/reseda/sentinel-2/
+
 Govedarica, M., Jakovljević, G., Alvarez-Taboada, F., & Kokeza, Z. (2020, May 13). Near Real-Time Burned Area Mapping Using Sentinel-2 Data. Retrieved May 29, 2025, from https://www.researchgate.net/publication/341286133_Near_Real-Time_Burned_Area_Mapping_Using_Sentinel-2_Data
+
 Keita, Z. (2023, November 14). An Introduction to Convolutional Neural Networks (CNNs). Retrieved from https://www.datacamp.com/tutorial/introduction-to-convolutional-neural-networks-cnns
+
 Machine Learning CO2 Impact Calculator. (n.d.). Retrieved from https://mlco2.github.io/impact/#compute
+
 Martineau, K. (2020, August 7). Shrinking deep learning’s carbon footprint. Retrieved from https://news.mit.edu/2020/shrinking-deep-learning-carbon-footprint-0807
+
 Naser, M. Z., & Kodur, V. (2025). Vulnerability of structures and infrastructure to wildfires: a perspective into assessment and mitigation strategies. Natural Hazards. https://doi.org/10.1007/s11069-025-07168-5
+
 Nicoletti, L., Ma, M., & Bass, D. (2025, May 8). How AI Demand Is Draining Local Water Supplies. Retrieved from https://www.bloomberg.com/graphics/2025-ai-impacts-data-centers-water-data/Vincent, J. (2024, February 16). How much electricity does AI consume? Retrieved from https://www.theverge.com/24066646/ai-electricity-energy-watts-generative-consumptionWorld Health Organization. (2023). Wildfires. Retrieved from https://www.who.int/health-topics/wildfires
+
 Yilmaz, E. O., & Kavzoglu, T. (2024). Burned Area Detection with Sentinel-2A Data: Using Deep Learning Techniques with eXplainable Artificial Intelligence. ISPRS Annals of the Photogrammetry, Remote Sensing and Spatial Information Sciences, X-5-2024, 251–257. https://doi.org/10.5194/isprs-annals-x-5-2024-251-2024
+
 Zhang, S., Bai, M., Wang, X., Peng, X., Chen, A., & Peng, P. (2023). Remote sensing technology for rapid extraction of burned areas and ecosystem environmental assessment. PeerJ, 11, e14557–e14557. https://doi.org/10.7717/peerj.14557
 
 ## Contact
