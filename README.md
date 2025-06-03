@@ -149,6 +149,8 @@ Machine Learning CO2 Impact Calculator. (n.d.). Retrieved from https://mlco2.git
 
 Martineau, K. (2020, August 7). Shrinking deep learning’s carbon footprint. Retrieved from https://news.mit.edu/2020/shrinking-deep-learning-carbon-footprint-0807
 
+McKee, F. (2024). GitHub - captainbluebear/GEOL0069-ML-Inland-Water-Body-Detection: Using k-means classification to analyse SENTINEL-2 satellite data for inland water body detection. Retrieved from https://github.com/captainbluebear/GEOL0069-ML-Inland-Water-Body-Detection/tree/main
+
 Naser, M. Z., & Kodur, V. (2025). Vulnerability of structures and infrastructure to wildfires: a perspective into assessment and mitigation strategies. Natural Hazards. https://doi.org/10.1007/s11069-025-07168-5
 
 Nicoletti, L., Ma, M., & Bass, D. (2025, May 8). How AI Demand Is Draining Local Water Supplies. Retrieved from https://www.bloomberg.com/graphics/2025-ai-impacts-data-centers-water-data/Vincent, J. (2024, February 16). How much electricity does AI consume? Retrieved from https://www.theverge.com/24066646/ai-electricity-energy-watts-generative-consumptionWorld Health Organization. (2023). Wildfires. Retrieved from https://www.who.int/health-topics/wildfires
