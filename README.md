@@ -14,7 +14,6 @@ This is a student-level project designed to analyse a wildfire-affected area usi
   - [Data and Requirements](#data-and-requirements)
 - [Acknowledgments](#acknowledgments)
 - [References](#references)
-- [Contact](#contact)
 - [License](#license)
   
 ## Video Guide
@@ -158,10 +157,6 @@ Nicoletti, L., Ma, M., & Bass, D. (2025, May 8). How AI Demand Is Draining Local
 Yilmaz, E. O., & Kavzoglu, T. (2024). Burned Area Detection with Sentinel-2A Data: Using Deep Learning Techniques with eXplainable Artificial Intelligence. ISPRS Annals of the Photogrammetry, Remote Sensing and Spatial Information Sciences, X-5-2024, 251–257. https://doi.org/10.5194/isprs-annals-x-5-2024-251-2024
 
 Zhang, S., Bai, M., Wang, X., Peng, X., Chen, A., & Peng, P. (2023). Remote sensing technology for rapid extraction of burned areas and ecosystem environmental assessment. PeerJ, 11, e14557–e14557. https://doi.org/10.7717/peerj.14557
-
-## Contact
-
-Aparna Karthikanand - aparna.karthikanand.22@ucl.ac.uk
 
 ## License
 Distributed under the MIT License. See LICENSE.txt for more information. 
